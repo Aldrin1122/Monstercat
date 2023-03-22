@@ -14,19 +14,12 @@
 }
 
 @layer components {
-    .requirementsItem{
-        @apply bg-white md:bg-transparent p-5 rounded-md min-h-[250px]
-    }
 }
 
 
 
 
 
-.header nav ul li a{
-    padding: 0.5rem;
-    @apply hover:text-secondary hover:border-b-2 hover:border-secondary
-}
 
 .tns-controls button:first-child{
     @apply hidden md:block absolute top-[50%] z-10 left-[5%] bg-white rounded-full w-10 h-10 text-primary 
@@ -54,4 +47,43 @@
     
 }
 
+@media (max-width:768px){
+    nav.open ul{
+        right: -20%;
+        transition: 0.5s ease-in;
+    }
 
+    nav ul {
+        display: block;
+        position: absolute;
+        right: -100%;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        text-align: left; 
+        transition: 0.5s ease-in; 
+    }
+
+    nav ul li a{
+        display: block;
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .toggle__menu.open span:nth-child(1){
+        transition: 0.5s ease;
+        transform: translate(-2px, 5px) rotate(45deg);
+    }
+
+    .toggle__menu.open span:nth-child(2){
+        opacity: 0;
+        transition: .3s ease-in-out;
+    }
+
+    .toggle__menu.open span:nth-child(3){
+        transition: 0.5s ease;
+        transform: translate(-2px, -12px) rotate(-45deg);
+    }
+
+  
+}
