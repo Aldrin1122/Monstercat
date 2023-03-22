@@ -559,8 +559,8 @@ body {
   position: fixed;
 }
 
-.bottom-0 {
-  bottom: 0px;
+.z-50 {
+  z-index: 50;
 }
 
 .mx-3 {
@@ -571,26 +571,6 @@ body {
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-}
-
-.mx-\[\] {
-  margin-left: ;
-  margin-right: ;
-}
-
-.mx-\[8\] {
-  margin-left: 8;
-  margin-right: 8;
-}
-
-.mx-\[8px\] {
-  margin-left: 8px;
-  margin-right: 8px;
-}
-
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 .mb-1 {
@@ -617,40 +597,8 @@ body {
   margin-top: 2rem;
 }
 
-.mt-\[1000px\] {
-  margin-top: 1000px;
-}
-
-.mt-\[500px\] {
-  margin-top: 500px;
-}
-
-.mt-\[700px\] {
-  margin-top: 700px;
-}
-
-.mt-\[600px\] {
-  margin-top: 600px;
-}
-
-.mt-\[550px\] {
-  margin-top: 550px;
-}
-
-.mt-\[540px\] {
-  margin-top: 540px;
-}
-
 .mt-\[590px\] {
   margin-top: 590px;
-}
-
-.ml-4 {
-  margin-left: 1rem;
-}
-
-.ml-5 {
-  margin-left: 1.25rem;
 }
 
 .block {
@@ -729,10 +677,6 @@ body {
   gap: 0.75rem;
 }
 
-.gap-4 {
-  gap: 1rem;
-}
-
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -794,6 +738,11 @@ body {
   padding: 20px;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -819,11 +768,6 @@ body {
   padding-bottom: 1.5rem;
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .pl-\[95rem\] {
   padding-left: 95rem;
 }
@@ -834,50 +778,6 @@ body {
 
 .pt-\[5rem\] {
   padding-top: 5rem;
-}
-
-.pt-\[\] {
-  padding-top: ;
-}
-
-.pt-\[90rem\] {
-  padding-top: 90rem;
-}
-
-.pt-\[30rem\] {
-  padding-top: 30rem;
-}
-
-.pt-\[50rem\] {
-  padding-top: 50rem;
-}
-
-.pt-\[20rem\] {
-  padding-top: 20rem;
-}
-
-.pt-2 {
-  padding-top: 0.5rem;
-}
-
-.pt-\[200\] {
-  padding-top: 200;
-}
-
-.pt-\[200px\] {
-  padding-top: 200px;
-}
-
-.pt-\[600px\] {
-  padding-top: 600px;
-}
-
-.pt-\[100px\] {
-  padding-top: 100px;
-}
-
-.pt-\[1000px\] {
-  padding-top: 1000px;
 }
 
 .text-center {
@@ -936,14 +836,6 @@ body {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\] {
-  color: ;
-}
-
-.text-\[1\] {
-  color: 1;
 }
 
 .backdrop-blur-xl {

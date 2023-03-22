@@ -13,7 +13,7 @@
 <body class="bg-black font-sans">
 
     <div class="background bg-[url('')] bg-cover bg-center">
-        <header class="header fixed w-[100%] backdrop-blur-xl  lg:backdrop-blur-none  lg:bg-transparent">
+        <header class="header fixed w-[100%] backdrop-blur-xl  lg:backdrop-blur-none  lg:bg-transparent z-50">
             <div class="container">
                 <div class="header_wrapper flex items-center justify-between p-4">
                     <div class="logo">
@@ -36,7 +36,7 @@
                             <li><a href="">LOST CIVILIZZATION</a></li>
                         </ul>
                         <div class="">
-                            <ul class="mt-[590px] px-4 text-[1.5rem] flex gap-3">
+                            <ul class="mt-[590px] px-4 text-[1.5rem] flex gap-3 lg:hidden">
                                 <li><a href=""><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a></li>
                                 <li><a href=""><i class="fa-brands fa-tiktok" style="color: #ffffff;"></i></a></li>
                                 <li><a href=""><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a></li>
@@ -57,7 +57,7 @@
         </header>
 
         <section>
-            <div class="hidden lg:block icons fixed pt-20  pl-[95rem]">
+            <div class="hidden lg:block fixed pt-20  pl-[95rem]">
                 <div class="container">
                     <div>
                         <ul class="gap-3 text-white text-[1.5rem]">
@@ -91,7 +91,7 @@
                 </div>
             </div>
         </section>
-        <div class="gradientBottomDark " ></div>
+        
     </div>
 
     <section>
@@ -377,6 +377,7 @@
         </div>
     </section>
 
+    <div class="gradientBottomDark " ></div>
 
     <script>
         const nav = document.querySelector(".navigation");

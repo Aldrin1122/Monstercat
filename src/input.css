@@ -46,7 +46,6 @@
     background-repeat: no-repeat;
     
 }
-
 @media (max-width:768px){
     nav.open ul{
         right: -20%;
