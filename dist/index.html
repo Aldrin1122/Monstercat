@@ -20,11 +20,25 @@
                         <a href=""><img class="w-[50px] h-[50px]" src="https://cdn.monstercat.com/monstercat-logo.webp" alt=""></a>
                     </div>
                     <nav class="navigation ">
-                        <ul class="navbar px-8 lg:hidden bg-black text-white font-bold">
+                        <ul class="navbar px-8 lg:hidden bg-black text-white font-bold ">
                             <li><a class="text-[2rem] flex item" href=""><img class="w-[4rem] h-[4rem] items-center" src="https://storage.googleapis.com/monstercat/monstercat-logo.webp" alt=""> MONSTERCAT</a></li>
-                            <li><a href="">MUSIC</a></li>
+                            <div class="overflow-auto h-[29rem]">
+                                 <button class="accordion">MUSIC</button>
+                                <div class="panel text-white block">
+                                    <a href="">OUR MUSIC</a><br>
+                                    <a href="">INSTINCT</a><br>
+                                    <a href="">UNCAGED</a><br>
+                                    <a href="">SILK</a>
+                                </div>
                             <li><a href="">ARTISTS</a></li>
-                            <li><a href="">ABOUT</a></li>
+                            <button class="accordion">ABOUT</button>
+                                <div class="panel text-white block">
+                                    <a href="">ABOUT MONSTERCAT</a><br>
+                                    <a href="">DIVERSITY & INCLUSION</a><br>
+                                    <a href="">CODE OF ETHICS</a><br>
+                                    <a href="">ENVIRONMENTAL</a><br>
+                                    <a href="">CONTACT US</a>
+                                </div>
                             <li><a href="">NEWS</a></li>
                             <li><a href="">EVENTS</a></li>
                             <li><a href="">PROGRAMMING</a></li>
@@ -34,6 +48,8 @@
                             <li><a href="">PLAYER</a></li>
                             <li><a href="">SHOP</a></li>
                             <li><a href="">LOST CIVILIZZATION</a></li>
+                            </div>
+                           
                         </ul>
                         <div class="">
                             <ul class="mt-[590px] px-4 text-[1.5rem] flex gap-3 lg:hidden">
@@ -387,6 +403,44 @@
             toggle__menu.classList.toggle("open");
             nav.classList.toggle("open");
         });
+    </script>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+    </script>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
     </script>
 </body>
 </html>
