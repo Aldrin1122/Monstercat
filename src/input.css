@@ -10,8 +10,40 @@
         @apply overflow-x-hidden;
     
     }
+    body::after {
+      -webkit-animation: grain 8s steps(10) infinite;;
+      animation: grain 8s steps(10) infinite;
+      background-image: url('https://cdn.monstercat.com/background-tile.webp');
+      content: "";
+      position: fixed;
+      height: 300%;
+      width: 300%;
+      top: -100%;
+      left: -50%;
+      opacity: 0.5;
+      -webkit-animation: grain 8s steps(10) infinite;
+      -moz-animation: grain 8s steps(10) infinite;
+      -o-animation: grain 8s steps(10) infinite;
+      animation: grain 8s steps(10) infinite;
+      z-index: -2;
+  }
+
+  @keyframes grain {
+    0%, 100% { transform:translate(0, 0) }
+    10% { transform:translate(-5%, -10%) }
+    20% { transform:translate(-15%, 5%) }
+    30% { transform:translate(7%, -25%) }
+    40% { transform:translate(-5%, 25%) }
+    50% { transform:translate(-15%, 10%) }
+    60% { transform:translate(15%, 0%) }
+    70% { transform:translate(0%, 15%) }
+    80% { transform:translate(3%, 35%) }
+    90% { transform:translate(-10%, 10%) }
+  }
+
 
 }
+
 
 @layer components {
 }
@@ -22,11 +54,11 @@
 
 
 .tns-controls button:first-child{
-    @apply hidden md:block absolute top-[50%] z-10 left-[5%] bg-white rounded-full w-10 h-10 text-primary 
+    @apply hidden md:block absolute top-[450%] z-10 left-[10%] bg-transparent rounded-full w-10 h-10 text-white
 }
 
 .tns-controls button:last-child{
-    @apply hidden md:block absolute top-[50%] z-10 right-[5%] bg-white rounded-full w-10 h-10 text-primary
+    @apply hidden md:block absolute top-[450%] z-10 right-[10%] bg-transparent rounded-full w-10 h-10 text-white
 }
 
 .background{
@@ -37,6 +69,7 @@
 .gradientBottomDark{
     position: absolute;
     background-image: linear-gradient( transparent, #000000);
+    z-index: 999;
 }
 
 .background{
@@ -46,7 +79,15 @@
     background-repeat: no-repeat;
     
 }
-@media (max-width:768px){
+
+.contact{
+    background-image: url('/dist/img/1920.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
     nav.open ul{
         right: -20%;
         transition: 0.5s ease-in;
@@ -84,20 +125,65 @@
         transform: translate(-2px, -12px) rotate(-45deg);
     }
 
-  
-}
 
-.accordion {
-    color: white;
-    cursor: pointer;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-  }
+
   .panel {
-    padding: 0 18px;
-    display: none;
     overflow: hidden;
   }
+
+  .info{
+    background-image: url('/dist/img/bgblack.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .connect{
+    background-image: url('/dist/img/bgblack.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .about1{
+    background-image: url('/dist/img/bgblack.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .pictures{
+    background-image: url('/dist/img/bgblack.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .footer1{
+    background-image: url('/dist/img/bgblack.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+
+  .active, .accor:active{
+    background-color: #ccc;
+    color: #000000;
+  }
+
+
+  .tns-nav{
+    text-align: center;
+    
+    
+}
+
+.tns-nav button{
+  height: 7px;
+  width: 80px;
+  border: 1px solid white;
+  margin: 0 3px;
+}
+
+.tns-nav .tns-nav-active {
+  background-color: white;
+}
