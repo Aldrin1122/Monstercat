@@ -421,6 +421,7 @@ video {
 
 body {
   overflow-x: hidden;
+  font-family: 'Monument Extended', sans-serif;
 }
 
 body::after {
@@ -1039,9 +1040,9 @@ body::after {
   padding: 4.5rem;
 }
 
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .px-4 {
@@ -1067,6 +1068,11 @@ body::after {
 .px-\[120px\] {
   padding-left: 120px;
   padding-right: 120px;
+}
+
+.px-\[1rem\] {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .px-\[2rem\] {
@@ -1176,8 +1182,24 @@ body::after {
   text-align: center;
 }
 
+.font-monument {
+  font-family: monument, regular;
+}
+
 .font-sans {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.font-serif {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.text-\[0\.5rem\] {
+  font-size: 0.5rem;
 }
 
 .text-\[1\.25rem\] {
@@ -1208,6 +1230,10 @@ body::after {
   font-size: 1rem;
 }
 
+.text-\[20px\] {
+  font-size: 20px;
+}
+
 .text-\[22px\] {
   font-size: 22px;
 }
@@ -1234,6 +1260,10 @@ body::after {
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .italic {
@@ -1289,6 +1319,12 @@ body::after {
   --tw-backdrop-blur: blur(24px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+@font-face{
+  font-family: 'mounument';
+
+  src: url('/dist/img/MonumentExtended-Regular.otf')
 }
 
 .tns-controls button:first-child {
@@ -1617,6 +1653,10 @@ nav ul li a{
     padding-bottom: 4rem;
   }
 
+  .lg\:pr-\[12rem\] {
+    padding-right: 12rem;
+  }
+
   .lg\:pr-\[14rem\] {
     padding-right: 14rem;
   }
@@ -1671,6 +1711,10 @@ nav ul li a{
 
   .lg\:text-\[6rem\] {
     font-size: 6rem;
+  }
+
+  .lg\:text-\[5rem\] {
+    font-size: 5rem;
   }
 
   .lg\:backdrop-blur-none {

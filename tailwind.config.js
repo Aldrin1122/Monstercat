@@ -17,6 +17,10 @@ module.exports = {
 
       fontFamily: {
         roboto : ['Roboto', 'san-serif']
+      },
+
+      fontFamily: {
+        monument : ['monument', 'regular']
       }
 
     },
